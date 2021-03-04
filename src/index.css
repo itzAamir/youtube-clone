@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+   margin: 0;
+   padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+   font-family: sans-serif;
+}
+
+#top-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   height: 3rem;
+}
+
+.yt-logo-wrapper {
+   height: 1.5rem;
+   width: 7rem;
+   background: url("./images/youtubeLogo.png") no-repeat center center/cover;
+}
+
+#top-nav ul {
+   display: flex;
+   width: 50%;
+   justify-content: space-between;
+}
+
+ul li {
+   list-style: none;
+}
+
+#bottom-nav {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background: #fff;
+}
+
+#bottom-nav ul {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+#bottom-nav li {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.9rem;
+}
+
+#main-container {
+   margin-bottom: 3.5rem;
+}
+
+.video {
+   /* border: 2px solid #000; */
+   width: 100%;
+   height: 46%;
+   overflow: hidden;
+   margin-bottom: 1rem;
+}
+
+.video img {
+   width: 100%;
+}
+
+.video-info-wrapper {
+   display: flex;
+   padding: 0.5rem;
+}
+
+.video-info-wrapper img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+.video-info {
+   margin-left: 1rem;
+}
+
+.video-info p {
+   font-weight: 700;
+   opacity: 0.9;
+   font-size: 1.2rem;
+   /* border: 1px solid #000; */
+   height: 2.8rem;
+   overflow: hidden;
+}
+
+.video-info span {
+   margin-top: 0.5rem;
+   font-size: 0.9rem;
+   opacity: 0.8;
 }
